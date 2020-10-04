@@ -1,0 +1,112 @@
+html{height:100%}
+h1,h2,h3,h4,h5,h6{font-family:b;font-weight:700}
+body{height:100%;min-height:35rem;position:relative;font-family:'Saira Extra Condensed', serif;font-weight:300}
+.overlay{position:absolute;height:100%;min-height:35rem;width:100%;background-color:#4C5B61;opacity:.75;z-index:-1}@media (min-width:768px){.overlay{min-height:0}}
+.masthead{position:relative;overflow:hidden;padding-bottom:3rem}
+.masthead .masthead-bg{position:absolute;top:0;bottom:0;right:0;left:0;width:100%;min-height:35rem;height:100%;background-color:rgba(0,46,102,.8);transform:skewY(4deg);transform-origin:bottom right}
+.masthead .masthead-content h1{font-size:2.5rem}
+.masthead .masthead-content p{font-size:1.2rem}
+.masthead .masthead-content p strong{font-weight:700}
+.masthead .masthead-content .input-group-newsletter input{font-size:1rem;padding:1rem}
+.masthead .masthead-content .input-group-newsletter button{font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:1rem}@media (min-width:768px){.masthead{height:100%;min-height:0;width:40.5rem;padding-bottom:0}.masthead .masthead-bg{min-height:0;transform:skewX(-8deg);transform-origin:top right}.masthead .masthead-content{padding-left:3rem;padding-right:10rem}.masthead .masthead-content h1{font-size:3.5rem}.masthead .masthead-content p{font-size:1.3rem}}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../img/chairs.jpeg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Saira Extra Condensed', serif;
+}
+
+.login{
+    width: 390px;
+    height: 550px;
+    background: rgba(0, 0, 0, .9);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.midas{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #acbea3;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+h1{
+    margin: 0px;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Saira Extra Condensed', serif;
+}
+
+.login p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.login input{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.login input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #acbea3;
+    background-color: rgba(255, 255, 255, .2);
+    outline: none;
+    height: 30px;
+    color: #fff;
+    font-size: 30px;
+}
+
+.inp:focus{
+    background-color: rgba(255, 255, 255, .6);
+    color: #000;
+}
+
+.login input[type=text]:focus{
+    background-color: rgba(255, 255, 255, .6);
+    color: #000;
+}
+
+
+.login input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #acbea3; 
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Saira Extra Condensed', serif;
+    border-radius: 20px;
+}
+
+.login input[type="submit"]:hover{
+    cursor: pointer;
+    background: #C4A156;
+}
+
+.login a{
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 37px;
+    color: darkblue;
+    padding: 10px 10px;
+}
+   
+.login a:hover{
+    color: #3366ff;
+}   
