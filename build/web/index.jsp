@@ -1,8 +1,3 @@
-<%-- 
-Document   : index
-Created on : May 28, 2018, 11:56:58 AM
-Author     : alejandro.mesa2
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>

@@ -11,10 +11,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
-/**
- *
- * @author santiago.marin10
- */
+
 @Stateless
 public class EstudianteFacade implements EstudianteFacadeLocal {
 

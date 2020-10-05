@@ -9,10 +9,7 @@ import com.midas.model.Estudiante;
 import java.util.List;
 import javax.ejb.Local;
 
-/**
- *
- * @author santiago.marin10
- */
+
 @Local
 public interface EstudianteFacadeLocal {
 

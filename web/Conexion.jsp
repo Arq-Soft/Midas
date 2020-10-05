@@ -1,7 +1,3 @@
-<%-- 
-    Document   : Conexion
-    Created on : Jun 2, 2018, 12:20:52 PM
-    Author     : yalexander.cordoba
 --%>
 <%@page import="java.sql.*"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

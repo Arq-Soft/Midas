@@ -1,8 +1,3 @@
-<%-- 
-    Document   : admin
-    Created on : May 28, 2018, 11:56:58 AM
-    Author     : alejandro.mesa2
---%>
 
 <%@page import="com.midas.model.Estudiante"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

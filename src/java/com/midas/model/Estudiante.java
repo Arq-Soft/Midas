@@ -21,10 +21,7 @@ import javax.transaction.UserTransaction;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 
-/**
- *
- * @author santiago.marin10
- */
+
 @Entity
 @Table(name = "estudiante")
 @XmlRootElement
