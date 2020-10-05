@@ -15,7 +15,7 @@ function openInNewTab(url) {
 function validateAdmin() {
     var usr = document.forms["admin"]["usr"].value;
     var psw = document.forms["admin"]["psw"].value;
-    if (usr !== 'admin' && psw !== 'midas') {
+    if (usr !== "admin" && psw !== "midas") {
         alert("usuario o contraseña inválidos");
     } else {
         openInNewTab("admin.jsp");

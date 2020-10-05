@@ -25,7 +25,7 @@
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-none">Principal</span>
                 <span class="d-none d-lg-block">
-                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/midas.png" alt="">
+                    <img class="img-fluid mx-auto mb-2" src="img/udea.png" alt="">
                 </span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,13 +49,13 @@
         <div class="container-fluid p-0">
             <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
                 <div class="my-auto">
-                    <h1 class="mb-0">EMPRESA
-                        <span class="text-primary">MIDAS</span>
+                    <h1 class="mb-0">UNIVERSIDAD
+                        <span class="text-primary">DE ANTIOQUIA</span>
                     </h1>
                     <br> </br>
                     <div class="subheading mb-5"> ADMINISTRACIÓN · SISTEMA ·
                     </div>
-                    <p class="subheading mb-5">BIENVENIDO AL ÁREA ADMINISTRATIVA DE LA EMPRESA MIDAS. MEDIANTE ESTE SISTEMA DE ADMINISTRACIÓN DE LA INFORMACIÓN, SE PODRÁ GUARDAR LA VIDA ACADÉMICA DE UNA PERSONA Y PODER CONSULTAR LA MISMA. POR FAVOR, SI TIENE ALGÚN INCONVENIENTE, CONTACTE CON LOS CREADORES.</p> 
+                    <p class="subheading mb-5">BIENVENIDO AL ÁREA ADMINISTRATIVA DE LA UNIVERSIDAD DE ANTIOQUIA. MEDIANTE ESTE SISTEMA DE ADMINISTRACIÓN DE LA INFORMACIÓN, SE PODRÁ GUARDAR LA VIDA ACADÉMICA DE UNA PERSONA Y PODER CONSULTAR LA MISMA. POR FAVOR, SI TIENE ALGÚN INCONVENIENTE, CONTACTE CON LOS CREADORES.</p> 
                     <ul class="list-inline list-social-icons mb-0">
                     </ul>
                 </div>

@@ -28,7 +28,7 @@
 
 
         <br><div class="login"><br/>
-            <img src="img/midas.png" class="midas" alt="midas">
+            <img src="img/udea.png" class="midas" alt="midas">
             <h1>LOGIN</h1>
             <form name="admin"   onsubmit="return validateAdmin()" > 
                 <br><p>USERNAME *</p><br/>

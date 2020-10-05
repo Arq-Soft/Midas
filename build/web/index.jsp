@@ -35,9 +35,9 @@
                 <div class="row h-100">
                     <div class="col-12 my-auto">
                         <div class="masthead-content text-white py-5 py-md-0">
-                            <h1 class="mb-3">MIDAS</h1>
-                            <p class="mb-5">NUESTRA MISIÓN ES FACILITAR LA  BÚSQUEDA Y CONTRIBUIR A LA RECOLECCIÓN DE LA INFORMACIÓN ACADÉMICA DE LAS PERSONAS.
-                                <br> <strong>¿DESEAS REALIZAR ALGUNA BÚSQUEDA?</strong> <br> HAZLO DE FORMA SENCILLA.</p></br>
+                            <h1 class="mb-3">UNIVERSIDAD DE ANTIOQUIA</h1>
+                            <p class="mb-5">La Universidad propicia el cambio y avance de la sociedad, y participa en la integración de ésta con los movimientos mundiales de orden cultural, científico y económico.
+                                <br><br> <strong>¿DESEAS REALIZAR ALGUNA BÚSQUEDA?</strong> <br> HAZLO DE FORMA SENCILLA.</p>
 
                             <form action="MenuServlet" method="POST">
                                 <div class="input-group input-group-newsletter">
