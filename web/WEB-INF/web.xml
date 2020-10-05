@@ -8,6 +8,10 @@
         <servlet-name>MenuServlet</servlet-name>
         <servlet-class>com.midas.controller.MenuServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Employee</servlet-name>
+        <servlet-class>com.midas.controller.Employee</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>EstudianteServlet</servlet-name>
         <url-pattern>/EstudianteServlet</url-pattern>
@@ -15,6 +19,10 @@
     <servlet-mapping>
         <servlet-name>MenuServlet</servlet-name>
         <url-pattern>/MenuServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Employee</servlet-name>
+        <url-pattern>/Employee</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

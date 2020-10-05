@@ -111,15 +111,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card-body">
-                            <center> <input class="btn btn-primary btn-block"  style="width: 25%;" type="submit" name="action" value="Agregar"></center> 
-                        </div>
-                    </form>
-                    <br>
-                </div>
-
-                <div class="container">
-                    <form name="checkbox" onchange="studyHandler()">
                         <div class="card card-register mx-auto mt-5">
                             <div class="card-header"><h4 class="mb-0">Proceso de matricula</h4></div>
                             <div class="card-body">
@@ -169,8 +160,19 @@
                                 </div> 
                             </div>
                         </div>
-                    </form>  
+                        <div class="card-body">
+                            <center> <input class="btn btn-primary btn-block"  style="width: 25%;" type="submit" name="action" value="Agregar"></center> 
+                        </div>
+                    </form>
+
+                    <br>
                 </div>
+                <%-- 
+                   <div class="container">
+
+    </div>
+                --%>
+
                 <div></div>
             </section>
 
