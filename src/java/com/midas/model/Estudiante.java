@@ -5,7 +5,10 @@
  */
 package com.midas.model;
 
+import java.io.InputStream;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.naming.Context;
@@ -17,9 +20,11 @@ import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
+import javax.servlet.http.HttpServletResponse;
 import javax.transaction.UserTransaction;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
+import static jdk.nashorn.internal.runtime.Debug.id;
 
 
 @Entity
@@ -154,8 +159,6 @@ public class Estudiante implements Serializable {
         this.materias = materias;
     }
     
-    
-
     public void persist(Object object) {
         /* Add this to the deployment descriptor of this module (e.g. web.xml, ejb-jar.xml):
          * <persistence-context-ref>
