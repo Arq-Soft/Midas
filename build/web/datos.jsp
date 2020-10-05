@@ -1,9 +1,3 @@
-<%-- 
-    Document   : admin
-    Created on : May 28, 2018, 11:56:58 AM
-    Author     : alejandro.mesa2
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="es">
@@ -93,6 +87,10 @@
                                     <label for="InputTeléfono"><h4 class="mb-0">Teléfono</h4></label>
                                     <input class="form-control"  name="telefono" type="number" placeholder="" required value="${estudiante.tel}">
                                 </div>
+                                <div class="form-group">
+                                    <label for="InputMaterias"><h4 class="mb-0">Materias matriculadas</h4></label>
+                                    <input class="form-control" readonly name="materias" type="String" placeholder="" required value="${estudiante.materias}">
+                                </div>
                             </div>
                                  <div class="card-body">
                                 <center><input class="btn btn-primary btn-block"  style="width: 25%;" type="submit" name="action" value="Borrar"></center>
@@ -103,57 +101,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="container">
-                    <form name="checkbox" onchange="studyHandler()">
-                        <div class="card card-register mx-auto mt-5">
-                            <div class="card-header"><h4 class="mb-0">Información académica</h4></div>
-                            <div class="card-body">
-                                <h4 class="mb-0"> Materias Matriculadas</h4>
-                                <div class="card card-register mx-auto mt-4">
-                                    <div class="form-row">
-                                        <div class="col-md-6">
-
-                                            <label class="container_checkbox"><h4 class="mb-0">Arquitectura de Software</h4>
-                                                <input type="checkbox"  id="check0" name="materias">
-                                                <span class="checkmark" ></span>
-                                            </label>
-
-                                            <label class="container_checkbox"><h4 class="mb-0">Comunicaciones</h4>
-                                                <input type="checkbox" id="check1" name="materias">
-                                                <span class="checkmark"></span>
-                                            </label>
-
-                                            <label class="container_checkbox"><h4 class="mb-0">Fisíca Mecánica</h4>
-                                                <input type="checkbox" id="check2" name="materias">
-                                                <span class="checkmark"></span>
-                                            </label>
-
-                                            <label class="container_checkbox"><h4 class="mb-0">Modelos</h4>
-                                                <input type="checkbox" id="check3" name="materias">
-                                                <span class="checkmark"></span>
-                                            </label>
-
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label class="container_checkbox"><h4 class="mb-0">Bases de Datos</h4>
-                                                <input type="checkbox"id="check4" name="materias">
-                                                <span class="checkmark"></span>
-                                            </label>
-
-                                            <label class="container_checkbox"><h4 class="mb-0">Lógica y reprresntación</h4>
-                                                <input type="checkbox" id="check5" name="materias">
-                                                <span class="checkmark"></span>
-                                            </label>
-
-                                            <label class="container_checkbox"><h4 class="mb-0">Teoría de lenguajes</h4>
-                                                <input type="checkbox" id="check6" name="materias">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
+               
                     </form>  
                 </div>
                 <div></div>

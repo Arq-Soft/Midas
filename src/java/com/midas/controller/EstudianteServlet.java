@@ -60,7 +60,7 @@ public class EstudianteServlet extends HttpServlet {
             String materiasParaBd = "";
             System.out.println(Arrays.toString(materias));
             for (int i = 0; i < materias.length; i++) {
-                materiasParaBd = materiasParaBd + materias[i] + ",";
+                materiasParaBd = materiasParaBd + materias[i] + " ";
             }
             String action = request.getParameter("action");
 
