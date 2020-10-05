@@ -1,4 +1,3 @@
-
 <%@page import="com.midas.model.Estudiante"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -104,6 +103,10 @@
                                     <label for="InputTeléfono"><h4 class="mb-0">Teléfono</h4></label>
                                     <input class="form-control" name="tel" type="number" placeholder="" required  >
                                 </div>
+                                <div class="form-group">
+                                    <label for="InputFoto"><h4 class="mb-0">Url Foto</h4></label>
+                                    <input class="form-control" name="foto" type="text" placeholder="" required  >
+                                </div>
                             </div>
                         </div>
                         <div class="card card-register mx-auto mt-5">
@@ -114,40 +117,40 @@
                                     <div class="form-row">
                                         <div class="col-md-6">
 
-                                            <label class="container_checkbox"><h4 class="mb-0">Ingles</h4>
-                                                <input type="checkbox"  id="check0" name="materias" value="Ingles">
+                                            <label class="container_checkbox"><h4 class="mb-0">Arquitectura de Software</h4>
+                                                <input type="checkbox"  id="check0" name="materias" value="arquitectura">
                                                 <span class="checkmark" ></span>
                                             </label>
 
-                                            <label class="container_checkbox"><h4 class="mb-0">Etica</h4>
-                                                <input type="checkbox" id="check1" name="materias" value="Etica">
+                                            <label class="container_checkbox"><h4 class="mb-0">Comunicaciones</h4>
+                                                <input type="checkbox" id="check1" name="materias" value="comunicaciones">
                                                 <span class="checkmark"></span>
                                             </label>
 
-                                            <label class="container_checkbox"><h4 class="mb-0">Comunicaciones</h4>
-                                                <input type="checkbox" id="check2" name="materias" value="Comunicaciones">
+                                            <label class="container_checkbox"><h4 class="mb-0">Fisíca Mecánica</h4>
+                                                <input type="checkbox" id="check2" name="materias" value="fisica">
                                                 <span class="checkmark"></span>
                                             </label>
 
                                             <label class="container_checkbox"><h4 class="mb-0">Modelos</h4>
-                                                <input type="checkbox" id="check3" name="materias" value="Modelos">
+                                                <input type="checkbox" id="check3" name="materias" value="modelos">
                                                 <span class="checkmark"></span>
                                             </label>
 
                                         </div>
                                         <div class="col-md-6">
-                                            <label class="container_checkbox"><h4 class="mb-0">Calculo</h4>
-                                                <input type="checkbox"id="check4" name="materias" value="Calculo">
+                                            <label class="container_checkbox"><h4 class="mb-0">Bases de Datos</h4>
+                                                <input type="checkbox"id="check4" name="materias" value="bases">
                                                 <span class="checkmark"></span>
                                             </label>
 
-                                            <label class="container_checkbox"><h4 class="mb-0">Fisica</h4>
-                                                <input type="checkbox" id="check5" name="materias" value="Fisica">
+                                            <label class="container_checkbox"><h4 class="mb-0">Lógica y representación</h4>
+                                                <input type="checkbox" id="check5" name="materias" value="logica">
                                                 <span class="checkmark"></span>
                                             </label>
 
-                                            <label class="container_checkbox"><h4 class="mb-0">Arquitectura</h4>
-                                                <input type="checkbox" id="check6" name="materias" value="Arquitectura">
+                                            <label class="container_checkbox"><h4 class="mb-0">Teoría de Lenguajes</h4>
+                                                <input type="checkbox" id="check6" name="materias" value="teoria">
                                                 <span class="checkmark"></span>
                                             </label>
                                         </div>

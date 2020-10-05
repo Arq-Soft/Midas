@@ -67,12 +67,13 @@ public class MenuServlet extends HttpServlet {
                         tel = Integer.parseInt(telStr);
                     }
                     String correo = request.getParameter("correo");
+                    String foto = request.getParameter("foto");
                     String[] materias = request.getParameterValues("materias");
                     String materiasParaBd = "";
                     for (int i = 0; i < materias.length; i++) {
                         materiasParaBd = materiasParaBd + materias[i];
                     }
-                    Estudiante est = new Estudiante(idEstudiante, nombres, apellidos, ciudadNac, edad, residencia, tel, correo, materiasParaBd);
+                    Estudiante est = new Estudiante(idEstudiante, nombres, apellidos, ciudadNac, edad, residencia, tel, correo, materiasParaBd, foto);
                     estudianteFacade.editarEstudiante(est);
                 }
 

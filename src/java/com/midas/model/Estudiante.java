@@ -5,10 +5,7 @@
  */
 package com.midas.model;
 
-import java.io.InputStream;
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.naming.Context;
@@ -20,11 +17,9 @@ import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
-import javax.servlet.http.HttpServletResponse;
 import javax.transaction.UserTransaction;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
-import static jdk.nashorn.internal.runtime.Debug.id;
 
 
 @Entity
@@ -59,9 +54,11 @@ public class Estudiante implements Serializable {
     @Size(max = 200)
     @Column(name = "materias")
     private String materias;
-    
+    @Column(name = "foto")
+    private String foto;
+    @Size(max = 5000)
 
-    public Estudiante(Integer idEstudiante, String nombres, String apellidos, String ciudadNac, int edad, String residencia, Integer tel, String correo, String materias) {
+    public Estudiante(Integer idEstudiante, String nombres, String apellidos, String ciudadNac, int edad, String residencia, Integer tel, String correo, String materias, String foto) {
         this.idEstudiante = idEstudiante;
         this.nombres = nombres;
         this.apellidos = apellidos;
@@ -71,6 +68,7 @@ public class Estudiante implements Serializable {
         this.tel = tel;
         this.correo = correo;
         this.materias = materias;
+        this.foto = foto;
     }
 
     public Estudiante() {
@@ -158,6 +156,13 @@ public class Estudiante implements Serializable {
     public void setMaterias(String materias) {
         this.materias = materias;
     }
+    public String getFoto() {
+        return foto;
+    }
+
+    public void setFoto(String materias) {
+        this.foto = foto;
+    }
     
     public void persist(Object object) {
         /* Add this to the deployment descriptor of this module (e.g. web.xml, ejb-jar.xml):
@@ -183,5 +188,4 @@ public class Estudiante implements Serializable {
         }
     }
 
-    
 }

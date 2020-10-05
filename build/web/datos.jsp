@@ -23,7 +23,7 @@
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-none">Principal</span>
                 <span class="d-none d-lg-block">
-                    <<img class="img-fluid e mx-auto mb-2" src="img/udea.png" alt="">
+                    <img class="img-fluid mx-auto mb-2" src="img/udea.png" alt="">
                 </span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,6 +51,9 @@
                         <div class="card card-register mx-auto mt-5">
                             <div class="card-header"><h4 class="mb-0">Información personal</h4></div>
                             <div class="card-body">
+                                <div class="form-group">
+                                    <img src="${estudiante.foto}"  width="50" height="60"> 
+                                </div>
                                 <div class="form-group">
                                     <div class="form-row">
                                         <div class="col-md-6">
@@ -92,16 +95,16 @@
                                     <input class="form-control" readonly name="materias" type="String" placeholder="" required value="${estudiante.materias}">
                                 </div>
                             </div>
-                                 <div class="card-body">
+                            <div class="card-body">
                                 <center><input class="btn btn-primary btn-block"  style="width: 25%;" type="submit" name="action" value="Borrar"></center>
-                                 </div>
-                                 <div class="card-body">
+                            </div>
+                            <div class="card-body">
                                 <center><input class="btn btn-primary btn-block"  style="width: 25%;" type="submit" name="action" value="Editar"></center>
-                                 </div>
+                            </div>
                         </div>
                     </form>
                 </div>
-               
+                
                     </form>  
                 </div>
                 <div></div>
