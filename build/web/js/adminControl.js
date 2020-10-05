@@ -3,43 +3,39 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-var preescolar, basica, media, superior, posgrado, phd, otro;
-var preescolarF, basicaF, mediaF, superiorF, posgradoF, phdF, otroF;
+var arquitectura, comunicaciones, fisica, modelos, bases, logica, teoria;
+//var preescolarF, basicaF, mediaF, superiorF, posgradoF, phdF, otroF;
 var estudios = [];
 var forms = [];
 var check = [];
 
-
-
-function setUp() {
-    preescolar = document.getElementById("preescolar");
-    basica = document.getElementById("basica");
-    media = document.getElementById("media");
-    superior = document.getElementById("superior");
-    posgrado = document.getElementById("posgrado");
-    phd = document.getElementById("phd");
-    otro = document.getElementById("otros");
-
-    preescolarF = document.forms["preescolar"];
-    basicaF = document.forms["basica"];
-    mediaF = document.forms["media"];
-    superiorF = document.forms["superior"];
-    posgradoF = document.forms["posgrado"];
-    phdF = document.forms["phd"];
-    otroF = document.forms["otros"];
-    estudios = [preescolar, basica, media, superior, posgrado, phd, otro];
-    forms = [preescolarF, basicaF, mediaF, superiorF, posgradoF, phdF, otroF];
-
-    for (var i = 0; i < 7; i++) {
-        check.push(document.getElementById("check" + i));
-    }
-}
-
-
+//function setUp() {
+////    arquitectura = document.getElementById("preescolar");
+////    comunicaciones = document.getElementById("basica");
+////    fisica = document.getElementById("media");
+////    modelos= document.getElementById("superior");
+////    bases = document.getElementById("posgrado");
+////    logica = document.getElementById("phd");
+////    teoria = document.getElementById("otros");
+////
+////    preescolarF = document.forms["preescolar"];
+////    basicaF = document.forms["basica"];
+////    mediaF = document.forms["media"];
+////    superiorF = document.forms["superior"];
+////    posgradoF = document.forms["posgrado"];
+////    phdF = document.forms["phd"];
+////    otroF = document.forms["otros"];
+//    meterias = [arquitectura, comunicaciones, fisica, modelos, bases, logica, teoria];
+//    //forms = [preescolarF, basicaF, mediaF, superiorF, posgradoF, phdF, otroF];
+//
+//    for (var i = 0; i < 7; i++) {
+//        check.push(document.getElementById("check" + i));
+//    }
+//}
 
 
 function studyHandler() {
-    setUp();
+//    setUp();
     for (var j = 0; j < 7; j++) {
         if (check[j].checked)
             estudios[j].style.display = "inline";
@@ -50,7 +46,7 @@ function studyHandler() {
 }
 
 function studentValidation() {
-    setUp();
+//    setUp();
     var data = [];
     var estudiante = document.forms["personal"];
     if (estudiante["nombres"].value === ""
@@ -69,55 +65,5 @@ function studentValidation() {
                 estudiante["residencia"].value, estudiante["edad"].value,
                 estudiante["correo"].value, estudiante["telefono"].value);
     }
-    for (var j = 0; j < 7; j++) {
-        if (check[j].checked) {
-
-            if (forms[j]["nombre"].value === ""
-                    || forms[j]["idAcademia"].value === ""
-                    || forms[j]["fechaInicio"].value === ""
-                    || forms[j]["fechaFin"].value === ""
-                    || forms[j]["tipo"].value === ""
-                    || forms[j]["categoria"].value === "") {
-
-                alert("por favor llene completamente los campos de: \n" +
-                        forms[j].name);
-            }
-
-        } else {
-            forms[j]["nombre"].value = "null";
-            forms[j]["idAcademia"].value = "null";
-            forms[j]["fechaInicio"].value = "1-1-1111";
-            forms[j]["fechaFin"].value = "1-1-1111";
-            forms[j]["tipo"].value = "null";
-            forms[j]["categoria"].value = "null";
-        }
-
-        data.push(forms[j]["nombre"].value,
-                forms[j]["idAcademia"].value,
-                forms[j]["fechaInicio"].value,
-                forms[j]["fechaFin"].value,
-                forms[j]["tipo"].value,
-                forms[j]["categoria"].value);
-    }
-    if (data.length!==0) console.log(data);
 }
 
-function academyValidation() {
-    setUp();
-    var data = [];
-    var institucion = document.forms["institucion"];
-    if (institucion["nombre"].value === ""
-            || institucion["idInstitucion"].value === ""
-            || institucion["tipo"].value === ""
-            || institucion["ciudad"].value === ""
-            || institucion["modalidad"].value === ""
-            || institucion["acreditada"].value === "") {
-
-        alert("por favor llene completamente los datos de la institucion");
-    } else {
-        data.push(institucion["nombre"].value, institucion["idInstitucion"].value,
-                institucion["tipo"].value, institucion["ciudad"].value,
-                institucion["modalidad"].value, institucion["acreditada"].value);
-    }
-    if (data.length!==0) console.log(data);
-}

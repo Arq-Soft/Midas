@@ -21,6 +21,11 @@
             30
         </session-timeout>
     </session-config>
+    <ejb-local-ref>
+        <ejb-ref-name>EstudianteFacade</ejb-ref-name>
+        <ejb-ref-type>Session</ejb-ref-type>
+        <local>com.midas.dao.EstudianteFacadeLocal</local>
+    </ejb-local-ref>
     <resource-ref>
         <res-ref-name>jdbc/estudiantes</res-ref-name>
         <res-type>javax.sql.DataSource</res-type>

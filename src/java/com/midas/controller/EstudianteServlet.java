@@ -38,7 +38,7 @@ public class EstudianteServlet extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-             String idStr = request.getParameter("idEstudiante");
+            String idStr = request.getParameter("idEstudiante");
             int idEstudiante = 0;
             if (idStr != null && !idStr.equals("")) {
                 idEstudiante = Integer.parseInt(idStr);
@@ -58,9 +58,14 @@ public class EstudianteServlet extends HttpServlet {
                 tel = Integer.parseInt(telStr);
             }
             String correo = request.getParameter("correo");
+            String[] materias = request.getParameterValues("materias");
+            String materiasParaBd = "";
+            for (int i = 0; i < materias.length; i++) {
+                materiasParaBd = materiasParaBd + materias[i];
+            }
             String action = request.getParameter("action");
 
-            Estudiante est = new Estudiante(idEstudiante, nombres, apellidos, ciudadNac, edad, residencia, tel, correo);
+            Estudiante est = new Estudiante(idEstudiante, nombres, apellidos, ciudadNac, edad, residencia, tel, correo, materiasParaBd);
 
             if ("Agregar".equalsIgnoreCase(action)) {
                 estudianteFacade.agregarEstudiante(est);
@@ -69,7 +74,7 @@ public class EstudianteServlet extends HttpServlet {
 
             RequestDispatcher a = request.getRequestDispatcher("admin.jsp");
             a.forward(request, response);
-            
+
         }
     }
 

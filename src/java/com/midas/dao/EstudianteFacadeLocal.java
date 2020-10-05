@@ -23,6 +23,7 @@ public interface EstudianteFacadeLocal {
     void eliminarEstudiante(int id);
 
     void editarEstudiante(Estudiante estudiante);
+    
 
     
 

@@ -32,8 +32,6 @@ Author     : alejandro.mesa2
         <link href="css/coming-soon.css" rel="stylesheet">
     </head>
     <body>
-
-
         <div class="overlay"></div>
 
         <div class="masthead">
@@ -45,14 +43,14 @@ Author     : alejandro.mesa2
                             <h1 class="mb-3">MIDAS</h1>
                             <p class="mb-5">NUESTRA MISIÓN ES FACILITAR LA  BÚSQUEDA Y CONTRIBUIR A LA RECOLECCIÓN DE LA INFORMACIÓN ACADÉMICA DE LAS PERSONAS.
                                 <br> <strong>¿DESEAS REALIZAR ALGUNA BÚSQUEDA?</strong> <br> HAZLO DE FORMA SENCILLA.</p></br>
-                            
+
                             <form action="MenuServlet" method="POST">
-                            <div class="input-group input-group-newsletter">
-                                <input type="text" class="form-control" name="idEstudiante" placeholder="INGRESA EL DOCUMENTO A BUSCAR (CC/TI)" aria-label="INGRESA EL DOCUMENTO A BUSCAR (CC/TI)" aria-describedby="basic-addon">
-                                <div class="input-group-append">
-                                    <input class="btn btn-secondary" type="submit" value="BUSCAR" name="action">
+                                <div class="input-group input-group-newsletter">
+                                    <input type="text" class="form-control" name="idEstudiante" placeholder="INGRESA EL DOCUMENTO A BUSCAR (CC/TI)" aria-label="INGRESA EL DOCUMENTO A BUSCAR (CC/TI)" aria-describedby="basic-addon">
+                                    <div class="input-group-append">
+                                        <input class="btn btn-secondary" type="submit" value="BUSCAR" name="action">
+                                    </div>
                                 </div>
-                            </div>
                             </form>
                             <br> </br>
                             <a href="login.jsp">ÁREA ADMINISTRATIVA</a>

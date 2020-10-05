@@ -9,6 +9,7 @@ import com.midas.model.Estudiante;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 
 /**
  *
@@ -40,4 +41,6 @@ public class EstudianteFacade implements EstudianteFacadeLocal {
         em.merge(estudiante);
     }
 
+  
+    
 }

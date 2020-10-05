@@ -38,7 +38,7 @@ public class MenuServlet extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-           String action = request.getParameter("action");
+            String action = request.getParameter("action");
             String idStr = request.getParameter("idEstudiante");
             int idEstudiante = 0;
             if (idStr != null && !idStr.equals("")) {
@@ -50,7 +50,6 @@ public class MenuServlet extends HttpServlet {
                 Estudiante estu = estudianteFacade.mostrarEstudiante(idEstudiante);
                 request.setAttribute("estudiante", estu);
                 a = request.getRequestDispatcher("datos.jsp");
-
             } else {
                 if ("Borrar".equalsIgnoreCase(action)) {
                     estudianteFacade.eliminarEstudiante(idEstudiante);
@@ -71,16 +70,20 @@ public class MenuServlet extends HttpServlet {
                         tel = Integer.parseInt(telStr);
                     }
                     String correo = request.getParameter("correo");
-                    Estudiante est = new Estudiante(idEstudiante, nombres, apellidos, ciudadNac, edad, residencia, tel, correo);
+                    String[] materias = request.getParameterValues("materias");
+                    String materiasParaBd = "";
+                    for (int i = 0; i < materias.length; i++) {
+                        materiasParaBd = materiasParaBd + materias[i];
+                    }
+                    Estudiante est = new Estudiante(idEstudiante, nombres, apellidos, ciudadNac, edad, residencia, tel, correo, materiasParaBd);
                     estudianteFacade.editarEstudiante(est);
                 }
 
                 a = request.getRequestDispatcher("index.jsp");
 
             }
-
             a.forward(request, response);
-            
+
         }
     }
 
