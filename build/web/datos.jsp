@@ -52,7 +52,7 @@
                             <div class="card-header"><h4 class="mb-0">Información personal</h4></div>
                             <div class="card-body">
                                 <div class="form-group">
-                                    <img src="${estudiante.foto}"  width="50" height="60"> 
+                                    <img src="${estudiante.foto}"  width="100" height="100"> 
                                 </div>
                                 <div class="form-group">
                                     <div class="form-row">

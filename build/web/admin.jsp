@@ -117,40 +117,40 @@
                                     <div class="form-row">
                                         <div class="col-md-6">
 
-                                            <label class="container_checkbox"><h4 class="mb-0">Arquitectura de Software</h4>
-                                                <input type="checkbox"  id="check0" name="materias" value="arquitectura">
+                                            <label class="container_checkbox"><h4 class="mb-0">Ingles</h4>
+                                                <input type="checkbox"  id="check0" name="materias" value="Ingles">
                                                 <span class="checkmark" ></span>
                                             </label>
 
                                             <label class="container_checkbox"><h4 class="mb-0">Comunicaciones</h4>
-                                                <input type="checkbox" id="check1" name="materias" value="comunicaciones">
+                                                <input type="checkbox" id="check1" name="materias" value="Comunicaciones">
                                                 <span class="checkmark"></span>
                                             </label>
 
-                                            <label class="container_checkbox"><h4 class="mb-0">Fisíca Mecánica</h4>
-                                                <input type="checkbox" id="check2" name="materias" value="fisica">
+                                            <label class="container_checkbox"><h4 class="mb-0">Etica</h4>
+                                                <input type="checkbox" id="check2" name="materias" value="Etica">
                                                 <span class="checkmark"></span>
                                             </label>
 
                                             <label class="container_checkbox"><h4 class="mb-0">Modelos</h4>
-                                                <input type="checkbox" id="check3" name="materias" value="modelos">
+                                                <input type="checkbox" id="check3" name="materias" value="Modelos">
                                                 <span class="checkmark"></span>
                                             </label>
 
                                         </div>
                                         <div class="col-md-6">
-                                            <label class="container_checkbox"><h4 class="mb-0">Bases de Datos</h4>
-                                                <input type="checkbox"id="check4" name="materias" value="bases">
+                                            <label class="container_checkbox"><h4 class="mb-0">Arquitectura</h4>
+                                                <input type="checkbox"id="check4" name="materias" value="Arquitectura">
                                                 <span class="checkmark"></span>
                                             </label>
 
-                                            <label class="container_checkbox"><h4 class="mb-0">Lógica y representación</h4>
-                                                <input type="checkbox" id="check5" name="materias" value="logica">
+                                            <label class="container_checkbox"><h4 class="mb-0">Calculo</h4>
+                                                <input type="checkbox" id="check5" name="materias" value="Calculo">
                                                 <span class="checkmark"></span>
                                             </label>
 
-                                            <label class="container_checkbox"><h4 class="mb-0">Teoría de Lenguajes</h4>
-                                                <input type="checkbox" id="check6" name="materias" value="teoria">
+                                            <label class="container_checkbox"><h4 class="mb-0">Fisica</h4>
+                                                <input type="checkbox" id="check6" name="materias" value="Fisica">
                                                 <span class="checkmark"></span>
                                             </label>
                                         </div>
